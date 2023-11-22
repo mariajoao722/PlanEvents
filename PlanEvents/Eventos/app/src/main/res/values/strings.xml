@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">PlanEvents</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="title_activity_maps2">MapsActivity2</string>
+    <string name="api_key">AIzaSyDVbvIGaiRtYmNIV9rK_XZfru0Uyw6oG1s</string>
+    <string name="title_activity_maps3">MapsActivity3</string>
+    <string name="title_activity_maps4">MapsActivity4</string>
+    <string name="title_activity_maps5">MapsActivity5</string>
+    <string name="title_activity_maps6">MapsActivity6</string>
+    <string name="title_activity_maps7">MapsActivity7</string>
+    <string name="title_activity_maps8">MapsActivity8</string>
+    <string name="title_activity_maps9">MapsActivity9</string>
+</resources>

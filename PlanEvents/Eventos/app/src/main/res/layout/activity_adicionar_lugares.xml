@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background= "#3758A4"
+    tools:context=".Adicionar_lugares">
+
+
+    <ImageView
+        android:id="@+id/uploadimage"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:src="@drawable/ic_image"
+        app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+    </ImageView>
+
+    <EditText
+        android:id="@+id/Nome"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/shape_editable"
+        android:ems="10"
+        android:hint="👤 Nome"
+        android:inputType="textPersonName"
+        android:padding="15dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/uploadimage" />
+
+    <TextView
+        android:id="@+id/localizacao"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:padding="15dp"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:background="@drawable/shape_editable"
+        android:ems="10"
+        android:textSize="19dp"
+        android:hint="📍 Localização"
+        android:inputType ="textPostalAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Nome" />
+
+    <EditText
+        android:id="@+id/descricao"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:padding="15dp"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:background="@drawable/shape_editable"
+        android:ems="10"
+        android:hint="📝 Descrição"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/localizacao" />
+
+    <EditText
+        android:id="@+id/tarefa"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:padding="15dp"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:background="@drawable/shape_editable"
+        android:ems="10"
+        android:hint="📝 Tarefa"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/descricao" />
+
+    <EditText
+        android:id="@+id/penalizacao"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:padding="15dp"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:background="@drawable/shape_editable"
+        android:ems="10"
+        android:hint="🕒 Penalização"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tarefa" />
+
+    <EditText
+        android:id="@+id/pontos"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:padding="15dp"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:background="@drawable/shape_editable"
+        android:ems="10"
+        android:hint="💯 Pontos"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/penalizacao" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/adicionar_lg"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/shape_button"
+        android:padding="10dp"
+        android:text="Adicionar"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.361"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/obrigatorio" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/voltar_atras"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/shape_button"
+        android:padding="10dp"
+        android:text="Voltar atrás"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/adicionar_lg"
+
+        />
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="264dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="36dp"
+        android:text="Adicionar Paragens"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/obrigatorio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:padding="10dp"
+        android:text="Obrigatório"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.077"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pontos" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

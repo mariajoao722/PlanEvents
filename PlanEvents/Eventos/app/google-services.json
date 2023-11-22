@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "704501811406",
+    "firebase_url": "https://eventos-15680-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "eventos-15680",
+    "storage_bucket": "eventos-15680.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:704501811406:android:8d35f54a77add7ea14289f",
+        "android_client_info": {
+          "package_name": "com.example.eventos"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "704501811406-mcs8qc8bc6rt974nqps3sdeqq9js6gn7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB7Okvdzh9tWumN-VP8uXZOoiWnrcxAqOM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "704501811406-mcs8qc8bc6rt974nqps3sdeqq9js6gn7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

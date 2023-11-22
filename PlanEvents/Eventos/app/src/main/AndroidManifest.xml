@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:enableOnBackInvokedCallback="true"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Eventos"
+        tools:targetApi="31">
+
+        <service android:name=".LocationService"
+            android:enabled="true"
+            android:exported="false"/>
+
+        <!--
+             TODO: Before you run your application, you need a Google Maps API key.
+
+             To get one, follow the directions here:
+
+                https://developers.google.com/maps/documentation/android-sdk/get-api-key
+
+             Once you have your API key (it starts with "AIza"), define a new property in your
+             project's local.properties file (e.g. MAPS_API_KEY=Aiza...), and replace the
+             "YOUR_API_KEY" string in this file with "${MAPS_API_KEY}".
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDVbvIGaiRtYmNIV9rK_XZfru0Uyw6oG1s" />
+
+        <activity
+            android:name=".MapsActivity9"
+            android:exported="false"
+            android:label="@string/title_activity_maps9" />
+        <activity
+            android:name=".MapsActivity8"
+            android:exported="false"
+            android:label="@string/title_activity_maps8" />
+
+
+
+        <activity
+            android:name=".MapsActivity7"
+            android:exported="false"
+            android:label="@string/title_activity_maps7" />
+        <activity
+            android:name=".MapsActivity6"
+            android:exported="false"
+            android:label="@string/title_activity_maps6" />
+        <activity
+            android:name=".DetalheInscritosMonitor"
+            android:exported="false" />
+        <activity
+            android:name=".ShowEventosMonitor"
+            android:exported="false" />
+        <activity
+            android:name=".ResponderUser"
+            android:exported="false" />
+        <activity
+            android:name=".ShowLugaresUser"
+            android:exported="false" />
+        <activity
+            android:name=".MapsActivity5"
+            android:exported="false"
+            android:label="@string/title_activity_maps5" />
+        <activity
+            android:name=".MapsActivity4"
+            android:exported="false"
+            android:label="@string/title_activity_maps4" />
+        <activity
+            android:name=".DetalhesLugar"
+            android:exported="false" />
+        <activity
+            android:name=".MapsActivity3"
+            android:exported="false"
+            android:label="@string/title_activity_maps3" />
+        <activity
+            android:name=".MapsActivity2"
+            android:exported="false"
+            android:label="@string/title_activity_maps2" />
+        <activity
+            android:name=".DetalhesEventoUser"
+            android:exported="false" />
+        <activity
+            android:name=".DetalheInscritos"
+            android:exported="false" />
+        <activity
+            android:name=".ShowPessoas"
+            android:exported="false" />
+        <activity
+            android:name=".EditarLugar"
+            android:exported="false" />
+        <activity
+            android:name=".ShowLugares"
+            android:exported="false" />
+        <activity
+            android:name=".DetalhesEvento"
+            android:exported="false" />
+        <activity
+            android:name=".ShowAllEventos"
+            android:exported="false" />
+        <activity
+            android:name=".ShowEventosUser"
+            android:exported="false" />
+        <activity
+            android:name=".ShowEventos"
+            android:exported="false" />
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-3940256099942544~3347511713" />
+
+        <activity
+            android:name=".MapsActivity"
+            android:exported="false"
+            android:label="@string/title_activity_maps" />
+        <activity
+            android:name=".MenuMonitor"
+            android:exported="false" />
+        <activity
+            android:name=".MenuAdmin"
+            android:exported="false" />
+        <activity
+            android:name=".MenuUser"
+            android:exported="false" />
+        <activity
+            android:name=".MonitorActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ResetPassword"
+            android:exported="false" />
+        <activity
+            android:name=".ProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Registar"
+            android:exported="false" />
+        <activity
+            android:name=".Adicionar_lugares"
+            android:exported="false" />
+        <activity
+            android:name=".Adicionar_Eventos"
+            android:exported="false" />
+        <activity
+            android:name=".Login"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

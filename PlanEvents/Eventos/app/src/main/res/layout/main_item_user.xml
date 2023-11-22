@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="6dp"
+    android:elevation="6dp"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@mipmap/ic_launcher"
+            android:id="@+id/img1"
+            app:civ_border_width="2dp"
+            app:civ_border_color="@color/black"/>
+
+        <TextView
+            android:id="@+id/nametext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/img1"
+            android:text="Nome do Evento"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/custotext"
+            android:layout_width="81dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/nametext"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/img1"
+            android:text="Custo"
+            android:textColor="@color/black"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/localizacaotext"
+            android:layout_width="203dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/nametext"
+            android:layout_toRightOf="@+id/custotext"
+            android:text="Localização"
+            android:textColor="@color/black"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/datatext"
+            android:layout_width="164dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/custotext"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/img1"
+            android:text="Data"
+            android:textColor="@color/black"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/duracaotext"
+            android:layout_width="105dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/datatext"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/img1"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/n_maxtext"
+            android:layout_width="113dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/datatext"
+            android:layout_marginLeft="70dp"
+            android:layout_toRightOf="@+id/duracaotext"
+            android:text="Inscritos"
+            android:textColor="@color/white"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/horatext"
+            android:layout_width="131dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/custotext"
+            android:layout_marginLeft="26dp"
+            android:layout_marginTop="-2dp"
+            android:layout_toRightOf="@+id/datatext"
+            android:text="Hora"
+            android:textColor="@color/black"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/descricaotext"
+            android:layout_width="365dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/duracaotext"
+            android:layout_marginLeft="10dp"
+
+            android:layout_marginTop="1dp"
+            android:text="Descrição"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_below="@+id/descricaotext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnDetalhes"
+                android:layout_width="173dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:gravity="center"
+                android:text="Ver Detalhes"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/btnMapa"
+                android:layout_width="173dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:gravity="center"
+                android:text="Ver Mapa"
+                android:textAllCaps="false" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
